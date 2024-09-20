@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@;0,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@;0,400;0,600;0,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bakgLilac: '#F0EAE4',
+                        basicBlack: '#1D1613',
+                        searchText: '#9B9997',
+                        lightBrown: '#A87B62',
+                        searchBrown: '#c9a591',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'system-ui'],
+                        cormorantGaramond: ['Cormorant Garamond', 'serif'],
+                    },
+                    backgroundImage: {
+                        'phone-3': "url('imegs/page-3/phone-3.png')",    
+                    },
+                    spacing: {
+                        '2.5': '10px',
+                        '7.5': '30px',
+                        '12.5': '50px',
+                        '13': '52px',
+                        '15': '60px',
+                        '17.5': '70px',
+                        '22': '88px',
+                        '25': '100px',
+                        '32.5': '130px',
+                        '37.5': '150px',
+                        '42.5': '170px',
+                    },
+                    borderWidth: {
+                        '1px': '1px',
+                    },
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="">
+    <div class="px-7.5 py-12.5 max-w-[442px] mx-auto ">
+
+        <div class="bg-phone-3  min-h-[84px]  bg-no-repeat bg-cover flex flex-row-reverse">
+            <div class="pt-3 pr-3  ">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7 5.44469L12.4447 0L14 1.55531L8.55531 7L14 12.4447L12.4447 14L7 8.55531L1.55531 14L0 12.4447L5.44469 7L0 1.55531L1.55531 0L7 5.44469Z"
+                        fill="#1D1613" />
+                </svg>
+            </div>
+        </div>
+        <form class="py-11 px-4 bg-bakgLilac flex flex-col text-center md:px-12.5 py-30 lg:px-11">
+
+            <h3 class="font-cormorantGaramond font-boldt text-2xl pb-10 md:pb-12.5 lg:pb-11">Log In</h3>
+            
+            <input class="bg-bakgLilac" type="email" name="email" placeholder="Your E-mail:">
+            <div class=" border-t border-t-lightBrown mt-4 mb-9 md:pb-10"></div>
+
+            <input class="bg-bakgLilac" type="password" name="password" placeholder="Password:">
+            <div class=" border-t border-t-lightBrown mt-4 "></div>
+
+            <button class="text-searchText text-xs self-end pb-10 md:pb-12.5" type="submit">Forgot your password?</button>
+
+            <button class="px-26 py-7 text-white bg-lightBrown mb-5">Log In</button>
+
+            <div class="flex justify-center gap-1">
+                <p class="text-searchText text-sm">Don’t have an account?</p>
+                <a class="text-sm" href="#">Sign up</a>
+            </div>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
